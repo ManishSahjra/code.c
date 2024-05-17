@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+ void printhello(); //declaration prototype
+
+
+ int main(){
+    printhello(); //calling function
+
+
+    return 0;
+ }
+
+ void printhello(){    // function defination
+    printf("Hello World!");
+ }
