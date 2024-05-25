@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+    int adhar[5];
+    int *ptr = &adhar[0];
+    for(int i = 0;i<=10;i++){
+        printf("%d index : ",i);
+        scanf("%d",(ptr+1));
+
+    }
+    for(int i=0;i<10;i++){
+        printf("%d index = %d",i,*(ptr+1));
+    }
+
+    return 0;
+}
