@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+    int number ,reverseNumber=0,orignalNumber,remainder;
+    printf("Enter the number : ");
+    scanf("%d",&number);
+    orignalNumber = number;
+    while(number!=0){
+        remainder = number%10;
+        reverseNumber = reverseNumber*10 + remainder;
+        number/=10;
+    }
+    if(orignalNumber==reverseNumber){
+        printf("True");
+    }else{
+        printf("False");
+        }
+    return 0;
+}
