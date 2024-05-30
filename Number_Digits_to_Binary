@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+int n,code=0,factor=1;
+printf("Enter the number : ");
+scanf("%d",&n);
+while(n>0)
+{
+int b=n%2;
+code+=factor*b;
+factor *= 10;
+n=n/2;
+    
+    
+}
+printf("%d",code);
+    return 0;
+}
