@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int age;
+
+    printf("enter your age : ");
+    scanf("%d", &age);
+
+    switch (age)
+    {
+    case 1:printf("Monday\n");
+        break;
+    case 2: printf("Tuesday\n");
+        break;
+    case 3: printf("Wednesday\n");
+        break;
+    case 4 : printf("Thursday\n");
+        break;
+    case 5: printf("Friday\n");
+        break;
+    case 6:printf("saturday\n");
+        break;
+ 
+    default:printf("Sunday\n");
+        
+    }
+
+
+    return 0;
+
+
+
+
+}
