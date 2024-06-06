@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+    int a,b,count = 0;
+
+    printf("Enter the numbers : ");
+    scanf("%d%d",&a,&b);
+    
+    for(int i = a ; i<=b;i++){
+        for(int j = 2;j<=i/2;j++){
+            if (i%j==0){
+                count = 1;
+                break;
+            }
+        }
+        if (count!=1){
+            printf("\t%d",i);
+        }
+        count = 0;
+    
+    }
+    return 0;
