@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+    int arr[5]={3,5,3,2,5};
+    int n,a;
+    printf("postion : ");
+    scanf("%d",&n);
+    printf("number");
+    scanf("%d",&a);
+for(int i=0;i<5;i++){
+    if (n==arr[i]){
+        arr[i]=a;
+
+    }
+    
+}
+for(int j=0;j<5;j++){
+    printf("%d",arr[j]);
+}
+
+    return 0;
+}
