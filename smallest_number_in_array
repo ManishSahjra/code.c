@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int arr[]={9,5,7};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    int smallest = arr[0];
+    for (int i = 1;i<n;i++){
+        if (arr[i]<smallest){
+            smallest = arr[i];
+        }
+    }
+    printf("%d",smallest);
+    return 0;
+}
