@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, i;
+    printf("Enter two numbers: ");
+    scanf("%d%d", &a, &b);
+
+    // Find HCF
+    int min = (a < b) ? a : b;
+    int hcf = 1;
+    for (i = 1; i <= min; ++i) {
+        if (a % i == 0 && b % i == 0) {
+            hcf = i;
+        }
+    }
+
+    // Find LCM
+    int lcm = (a * b) / hcf;
+
+    printf("HCF = %d\n", hcf);
+    printf("LCM = %d\n", lcm);
+
+    return 0;
+}
