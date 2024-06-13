@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int a, b, c, x;
+    float result;
+
+    printf("Enter the value of first side: ");
+    scanf("%d", &a);
+    printf("Enter the value of second side: ");
+    scanf("%d", &b);
+    printf("Enter the value of third side: ");
+    scanf("%d", &c);
+
+    x = (a + b + c) / 2;
+    result = sqrt(x * (x - a) * (x - b) * (x - c));
+
+    printf("Area of the triangle is: %.2f\n", result);
+
+    return 0;
+}
