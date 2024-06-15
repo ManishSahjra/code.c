@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<string.h>
+int string_length(char *s){
+    return strlen(s);
+
+}
+int main(){
+    char my_string[] = "manish";
+    int length = string_length(my_string);
+    printf("%d\n",length);
+
+    return 0;
+}
