@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int main() {
+    char str[100];
+    int left, right;
+
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+
+    
+    str[strcspn(str, "\n")] = 0;
+
+    left = 0;
+    right = strlen(str) - 1;
+
+    while (left < right) {
+      
+        while (left < right && !isalnum(str[left])) left++;
+        while (left < right && !isalnum(str[right])) right--;
+
+        if (tolower(str[left]) != tolower(str[right])) {
+            printf("\"%s\" is not a palindrome.\n", str);
+            return 0; // Exit as soon as a mismatch is found
+        }
+        left++;
+        right--;
+    }
+
+    printf("\"%s\" is a palindrome.\n", str);
+    return 0;
+}
