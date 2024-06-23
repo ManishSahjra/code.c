@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+
+int main() {
+    int a,b,c;
+    printf("Write your first number: ");
+    scanf("%d",&a);
+    printf("Write your second number: ");
+    scanf("%d",&b);
+    c = a+b;
+    a = c-a;
+    b = c-b;
+    printf("%d \n",a);
+    printf("%d",b);
+   return 0;
+}
